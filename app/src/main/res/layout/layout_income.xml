@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="工资" />
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="其他" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id = "@+id/layout"
+        android:layout_width = "match_parent"
+        android:layout_height = "0dp"
+        android:orientation = "vertical"
+        android:layout_weight = "1">
+        <!--sum-->
+        <EditText
+            android:id = "@+id/edit_text6"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:hint = "请输入本月工资"
+            />
+        <!--description-->
+        <EditText
+            android:id = "@+id/edit_text7"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:hint = "备注（用于以后检索）："
+            />
+        <RelativeLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content">
+            <LinearLayout
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+                <!--pay_way-->
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id = "@+id/spinner3"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:entries="@array/pay_way"/>
+                <!--time_limit-->
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id = "@+id/spinner4"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:entries="@array/month"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id = "@+id/layout1"
+        android:layout_width = "match_parent"
+        android:layout_height = "0dp"
+        android:orientation = "vertical"
+        android:layout_weight = "1">
+        <!--type-->
+        <EditText
+            android:id = "@+id/edit_text1"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:hint = "请输入收入类型："
+            />
+        <!--payee-->
+        <EditText
+            android:id = "@+id/edit_text2"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:hint = "请输入付款方："
+            />
+        <!--location-->
+        <EditText
+            android:id = "@+id/edit_text3"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:hint = "请输入交易地点："
+            />
+        <!--sum-->
+        <EditText
+            android:id = "@+id/edit_text4"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:hint = "请输入收入金额："
+            />
+        <!--description-->
+        <EditText
+            android:id = "@+id/edit_text5"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:hint = "备注（用于以后检索）："
+            />
+        <RelativeLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content">
+            <LinearLayout
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+                <!--pay_way-->
+                <Spinner
+                    android:id = "@+id/spinner1"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"/>
+                <!--time_limit-->
+                <Spinner
+                    android:id = "@+id/spinner2"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content">
+            <LinearLayout
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content">
+                <Button
+                    android:id = "@+id/button1"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text = "取消"/>
+                <Button
+                    android:id = "@+id/button2"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text = "确定"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id = "@+id/layout2"
+        android:layout_width = "match_parent"
+        android:layout_height = "0dp"
+        android:orientation = "vertical"
+        android:layout_weight = "1">
+        <DatePicker
+            android:id = "@+id/data_picker"
+            android:layout_width = "match_parent"
+            android:layout_height = "0dp"
+            android:layout_weight = "1"/>
+        <TimePicker
+            android:id = "@+id/time_picker"
+            android:layout_width = "match_parent"
+            android:layout_height = "0dp"
+            android:layout_weight = "1"/>
+        <RelativeLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content">
+            <LinearLayout
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_centerInParent="true">
+                <Button
+                    android:id = "@+id/button3"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text = "返回"/>
+                <Button
+                    android:id = "@+id/button4"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text = "确定"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.LinearLayoutCompat>

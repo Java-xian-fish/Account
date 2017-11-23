@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.jiangtao.account.TitleActivity"
+    android:layout_height="match_parent">
+    <Custom.Title
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!-- <ImageButton
+         android:id="@+id/IB1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentStart="true"
+         android:layout_alignParentTop="true"
+         android:background="#3A5FCD"
+         android:src="@drawable/other" />
+
+     <TextView
+         android:id="@+id/TW1"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_centerInParent="true" />
+
+     <ImageButton
+         android:id="@+id/IB2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:background="#3A5FCD"
+         android:src="@mipmap/ic_section" />-->
+
+</LinearLayout>

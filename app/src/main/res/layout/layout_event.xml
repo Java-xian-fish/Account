@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第一次记录" />
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="续记" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id = "@+id/layout1"
+        android:layout_width = "match_parent"
+        android:layout_height = "0dp"
+        android:orientation = "vertical"
+        android:layout_weight = "1">
+        <EditText
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="事件名称："/>
+        <EditText
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="人物："/>
+        <EditText
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="地点："/>
+        <EditText
+            android:id="@+id/text4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="环境："/>
+        <EditText
+            android:id="@+id/text5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="5"
+            android:maxLines="30"
+            android:hint="事情经过："/>
+        <RelativeLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content">
+            <LinearLayout
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content">
+                <Button
+                    android:id = "@+id/button1"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text = "取消"/>
+                <Button
+                    android:id = "@+id/button2"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text = "确定"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id = "@+id/layout2"
+        android:layout_width = "match_parent"
+        android:layout_height = "0dp"
+        android:orientation = "vertical"
+        android:layout_weight = "1">
+        <DatePicker
+            android:id = "@+id/data_picker"
+            android:layout_width = "match_parent"
+            android:layout_height = "0dp"
+            android:layout_weight = "1"/>
+        <TimePicker
+            android:id = "@+id/time_picker"
+            android:layout_width = "match_parent"
+            android:layout_height = "0dp"
+            android:layout_weight = "1"/>
+        <RelativeLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content">
+            <LinearLayout
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_centerInParent="true">
+                <Button
+                    android:id = "@+id/button3"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text = "返回"/>
+                <Button
+                    android:id = "@+id/button4"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text = "确定"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.LinearLayoutCompat>

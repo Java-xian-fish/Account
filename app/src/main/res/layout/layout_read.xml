@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新书" />
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="续读" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id = "@+id/layout1"
+        android:layout_width = "match_parent"
+        android:layout_height = "0dp"
+        android:orientation = "vertical"
+        android:layout_weight = "1">
+        <EditText
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="书名："/>
+        <EditText
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="作者："/>
+        <EditText
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="出版社："/>
+        <EditText
+            android:id="@+id/text4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="版本："/>
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/text5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="开始页码："/>
+            <EditText
+                android:id="@+id/text6"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="结束页码："/>
+            <EditText
+                android:id="@+id/text7"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="总页码："/>
+            <TextView
+                android:id="@+id/text_view"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/text8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="5"
+            android:maxLines="30"
+            android:hint="阅读章节："/>
+        <EditText
+            android:id="@+id/text9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="5"
+            android:maxLines="30"
+            android:hint="大致描述："/>
+        <RelativeLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content">
+            <LinearLayout
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content">
+                <Button
+                    android:id = "@+id/button1"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text = "取消"/>
+                <Button
+                    android:id = "@+id/button2"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text = "确定"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id = "@+id/layout2"
+        android:layout_width = "match_parent"
+        android:layout_height = "0dp"
+        android:orientation = "vertical"
+        android:layout_weight = "1">
+        <DatePicker
+            android:id = "@+id/data_picker"
+            android:layout_width = "match_parent"
+            android:layout_height = "0dp"
+            android:layout_weight = "1"/>
+        <TimePicker
+            android:id = "@+id/time_picker"
+            android:layout_width = "match_parent"
+            android:layout_height = "0dp"
+            android:layout_weight = "1"/>
+        <RelativeLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content">
+            <LinearLayout
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_centerInParent="true">
+                <Button
+                    android:id = "@+id/button3"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text = "返回"/>
+                <Button
+                    android:id = "@+id/button4"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text = "确定"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.LinearLayoutCompat>
